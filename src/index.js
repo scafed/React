@@ -14,13 +14,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <HelmetProvider>
-      <BrowserRouter>
+      <HashRouter>
         <AuthProvider>
           <CartProvider>
             <App />
           </CartProvider>
         </AuthProvider>
-      </BrowserRouter>
+      </HashRouter>
     </HelmetProvider>
   </React.StrictMode>
 );
